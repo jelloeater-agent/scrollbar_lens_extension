@@ -1,5 +1,38 @@
 {
     "extensionDescription": {
         "message": "Muestra un minimapa de la página al pasar el cursor sobre la barra de desplazamiento"
+    },
+    "optionsTitle": {
+        "message": "Opciones de Scrollbar Lens"
+    },
+    "optionWidth": {
+        "message": "Ancho del minimapa"
+    },
+    "optionWidthHint": {
+        "message": "Qué tan ancho aparece el minimapa al revelarse."
+    },
+    "optionHoverDelay": {
+        "message": "Retardo al pasar el cursor"
+    },
+    "optionHoverDelayHint": {
+        "message": "Tiempo de espera antes de mostrar el minimapa al pasar el cursor sobre la zona de activación."
+    },
+    "optionHideDelay": {
+        "message": "Retardo al ocultar"
+    },
+    "optionHideDelayHint": {
+        "message": "Tiempo de espera antes de ocultar el minimapa después de que el mouse lo abandone."
+    },
+    "optionSave": {
+        "message": "Guardar"
+    },
+    "optionReset": {
+        "message": "Restablecer valores"
+    },
+    "optionSaved": {
+        "message": "Opciones guardadas"
+    },
+    "optionResetDone": {
+        "message": "Valores restablecidos"
     }
 }

@@ -1,5 +1,38 @@
 {
     "extensionDescription": {
         "message": "Shows a minimap of the page when hovering over the scrollbar"
+    },
+    "optionsTitle": {
+        "message": "Scrollbar Lens Options"
+    },
+    "optionWidth": {
+        "message": "Minimap width"
+    },
+    "optionWidthHint": {
+        "message": "How wide the minimap appears when revealed."
+    },
+    "optionHoverDelay": {
+        "message": "Hover delay"
+    },
+    "optionHoverDelayHint": {
+        "message": "How long to wait before showing the minimap after hovering the trigger zone."
+    },
+    "optionHideDelay": {
+        "message": "Hide delay"
+    },
+    "optionHideDelayHint": {
+        "message": "How long to wait before hiding the minimap after the mouse leaves it."
+    },
+    "optionSave": {
+        "message": "Save"
+    },
+    "optionReset": {
+        "message": "Reset to defaults"
+    },
+    "optionSaved": {
+        "message": "Options saved"
+    },
+    "optionResetDone": {
+        "message": "Reset to defaults"
     }
 }

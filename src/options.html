@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scrollbar Lens Options</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            padding: 1.5em 2em;
+            max-width: 500px;
+            background: var(--in-content-page-background, #fff);
+            color: var(--in-content-page-color, #0c0c0d);
+        }
+        h1 {
+            font-size: 1.5em;
+            font-weight: 600;
+            margin: 0 0 1em;
+            display: flex;
+            align-items: center;
+            gap: 0.5em;
+        }
+        h1 img {
+            width: 32px;
+            height: 32px;
+        }
+        .field-group {
+            margin-bottom: 1.5em;
+        }
+        label {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 0.3em;
+        }
+        .hint {
+            font-size: 0.85em;
+            opacity: 0.7;
+            margin-top: 0.2em;
+        }
+        input[type="range"] {
+            width: 100%;
+            margin: 0.3em 0;
+        }
+        .range-value {
+            font-weight: 600;
+            min-width: 3em;
+            display: inline-block;
+            text-align: right;
+        }
+        .range-row {
+            display: flex;
+            align-items: center;
+            gap: 0.5em;
+        }
+        .range-row input[type="range"] {
+            flex: 1;
+        }
+        .actions {
+            margin-top: 2em;
+            display: flex;
+            gap: 0.75em;
+        }
+        button {
+            padding: 0.5em 1.2em;
+            border-radius: 4px;
+            border: 1px solid var(--in-content-button-border, #8f8f9d);
+            background: var(--in-content-button-background, #f9f9fa);
+            cursor: pointer;
+            font-size: 0.95em;
+        }
+        button.primary {
+            background: var(--in-content-primary-button-background, #0060df);
+            color: #fff;
+            border-color: var(--in-content-primary-button-border, #0060df);
+        }
+        button.primary:hover {
+            background: var(--in-content-primary-button-background-hover, #003eaa);
+        }
+        #status {
+            margin-top: 1em;
+            font-size: 0.9em;
+            min-height: 1.3em;
+        }
+        #status.saved {
+            color: #058b00;
+        }
+        #status.error {
+            color: #d70022;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <img src="icon.png" alt="">
+        Scrollbar Lens Options
+    </h1>
+
+    <div class="field-group">
+        <label for="width">Minimap width</label>
+        <div class="range-row">
+            <input type="range" id="width" min="80" max="500" step="10" value="180">
+            <span class="range-value" id="width-value">180px</span>
+        </div>
+        <div class="hint">How wide the minimap appears when revealed.</div>
+    </div>
+
+    <div class="field-group">
+        <label for="hoverDelay">Hover delay</label>
+        <div class="range-row">
+            <input type="range" id="hoverDelay" min="0" max="500" step="10" value="60">
+            <span class="range-value" id="hoverDelay-value">60ms</span>
+        </div>
+        <div class="hint">How long to wait before showing the minimap after hovering the trigger zone.</div>
+    </div>
+
+    <div class="field-group">
+        <label for="hideDelay">Hide delay</label>
+        <div class="range-row">
+            <input type="range" id="hideDelay" min="0" max="1000" step="50" value="150">
+            <span class="range-value" id="hideDelay-value">150ms</span>
+        </div>
+        <div class="hint">How long to wait before hiding the minimap after the mouse leaves it.</div>
+    </div>
+
+    <div class="actions">
+        <button class="primary" id="save">Save</button>
+        <button id="reset">Reset to defaults</button>
+    </div>
+
+    <div id="status"></div>
+
+    <script src="options.js"></script>
+</body>
+</html>

@@ -3,7 +3,7 @@
     "name": "Scrollbar Lens",
     "description": "__MSG_extensionDescription__",
     "default_locale": "en",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "author": "emvaized",
     "background": {
         "scripts": [
@@ -26,8 +26,13 @@
         }
     ],
     "permissions": [
-        "<all_urls>"
+        "<all_urls>",
+        "storage"
     ],
+    "options_ui": {
+        "page": "options.html",
+        "browser_style": true
+    },
     "icons": {
         "48": "icon.png"
     },

@@ -1,5 +1,38 @@
 {
     "extensionDescription": {
         "message": "Показывает мини-карту страницы при наведении курсора на полосу прокрутки"
+    },
+    "optionsTitle": {
+        "message": "Настройки Scrollbar Lens"
+    },
+    "optionWidth": {
+        "message": "Ширина мини-карты"
+    },
+    "optionWidthHint": {
+        "message": "Насколько широкой будет мини-карта при появлении."
+    },
+    "optionHoverDelay": {
+        "message": "Задержка при наведении"
+    },
+    "optionHoverDelayHint": {
+        "message": "Задержка перед показом мини-карты после наведения на зону прокрутки."
+    },
+    "optionHideDelay": {
+        "message": "Задержка при скрытии"
+    },
+    "optionHideDelayHint": {
+        "message": "Задержка перед скрытием мини-карты после ухода курсора."
+    },
+    "optionSave": {
+        "message": "Сохранить"
+    },
+    "optionReset": {
+        "message": "Сбросить"
+    },
+    "optionSaved": {
+        "message": "Настройки сохранены"
+    },
+    "optionResetDone": {
+        "message": "Сброшено до значений по умолчанию"
     }
 }
