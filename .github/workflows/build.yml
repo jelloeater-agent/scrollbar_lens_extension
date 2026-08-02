@@ -1,0 +1,32 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install web-ext
+        run: npm install -g web-ext
+
+      - name: Lint extension
+        run: web-ext lint --source-dir src/
+
+      - name: Build extension package
+        run: web-ext build --source-dir src/ --artifacts-dir dist/ --overwrite-dest
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: scrollbar-lens-build
+          path: dist/*.zip
